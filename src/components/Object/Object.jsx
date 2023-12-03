@@ -18,7 +18,6 @@ const Object = ({ objectId }) => {
             .then((response) => {
                 return response.json()
             }).then(data => {
-                //console.log(data)
                 setObject(data)
             }).catch((err) => {
                 console.log('reject', err)
@@ -26,6 +25,7 @@ const Object = ({ objectId }) => {
     }, [objectId])
 
     return (
+
         <div className={classes.gridContainer}>
             <div className={classes.objectTitle}>Title:<br />
                 <div className={classes.title} >
@@ -36,7 +36,6 @@ const Object = ({ objectId }) => {
                     </Link>
                 </div>
             </div>
-
             <Link className={classes.link} to={{
                 pathname: `/detail/${objectId}`
             }}>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Toaster } from 'react-hot-toast'
 import Router from './Router'
 
 function App() {
@@ -16,14 +15,11 @@ function App() {
     }, [])
 
 
-  return (
-      <div>
-
-          <Toaster/>
-              <Router isLoading={loading} />
-    
-    </div>
-  );
+    return (
+        <div>
+            <Router loading={loading} />
+        </div>
+    )
 }
 
-export default App;
+export default App
