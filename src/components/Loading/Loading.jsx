@@ -6,23 +6,19 @@ import styles from './Loading.styles'
 const useStyles = createUseStyles(styles)
 
 const Loading = () => {
-  const classes = useStyles()
-  return (
-    <div className={classes.containerWrapper}>
-      <div className={classes.container}>
-        <div className={ classes.roller }>
-          <div/>
-          <div/>
-          <div/>
-          <div/>
-          <div/>
-          <div/>
-          <div/>
-          <div/>
+
+    const classes = useStyles()
+
+    return (
+        <div className={classes.containerWrapper}>
+            <div className={classes.loader}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Loading
