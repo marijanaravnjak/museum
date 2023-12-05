@@ -1,6 +1,6 @@
 {
     "homepage": "https://marijanaravnjak.github.io/museum",
-    "name": "museum",
+    "name": "museum_page",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
